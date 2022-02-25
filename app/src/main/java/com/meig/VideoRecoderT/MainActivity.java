@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
     private int mCheck = -1;
 
     private int mDeiveceWith = 0;   //保存设备屏幕宽
+    private int mDeiveceHeight = 0;
     private static float DEFAUT_RATIO = 1.77f;  //预览图宽高比
     private String prefix = "";
 
@@ -98,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mDeiveceWith = getWindowManager().getDefaultDisplay().getWidth();
+        mDeiveceHeight = getWindowManager().getDefaultDisplay().getHeight();
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
@@ -107,15 +109,14 @@ public class MainActivity extends AppCompatActivity {
         mSurfaceview = (SurfaceView) findViewById(R.id.surfaceview);
 
         android.view.ViewGroup.LayoutParams lp = mSurfaceview.getLayoutParams();
-        if (mDeiveceWith > 0) {
+
+        if (mDeiveceWith > mDeiveceHeight && mDeiveceHeight > 0) {
             lp.width = mDeiveceWith;
-            lp.height = mDeiveceWith / 9 * 16;
-        } else {
-            lp.width = 540; // 自定义 宽:高 = 9:16
-            lp.height = 960;
+            lp.height = mDeiveceWith / 16 * 9;
+        } else if (mDeiveceWith > 0) {
+            lp.width = mDeiveceWith / 4 * 3;
+            lp.height = mDeiveceWith / 9 * 16 / 4 * 3;
         }
-        lp.width = 540; // 自定义 宽:高 = 9:16
-        lp.height = 960;
         mSurfaceview.setLayoutParams(lp);
 
         //mImageView = (ImageView) findViewById(R.id.imageview);
@@ -170,7 +171,11 @@ public class MainActivity extends AppCompatActivity {
 
                     camera = Camera.open(Camera.CameraInfo.CAMERA_FACING_BACK);
                     if (camera != null) {
-                        camera.setDisplayOrientation(90);
+                        if (mDeiveceWith > mDeiveceHeight) {
+                            camera.setDisplayOrientation(0);
+                        } else {
+                            camera.setDisplayOrientation(90);
+                        }
                         camera.unlock();
                         mRecorder.setCamera(camera);
                     }

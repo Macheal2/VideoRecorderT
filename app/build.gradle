@@ -3,11 +3,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 28
+    buildToolsVersion '29.0.2'
 
     defaultConfig {
         applicationId "com.meig.VideoRecoderT"
+
         minSdkVersion 24
         targetSdkVersion 31
         versionCode 1
