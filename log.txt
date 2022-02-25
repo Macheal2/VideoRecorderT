@@ -1,0 +1,385 @@
+--------- beginning of kernel
+01-26 20:29:38.902     0     0 I pmi632_charger: default_irq_handler: IRQ: usbin-collapse
+01-26 20:29:38.907     0     0 I pmi632_charger: default_irq_handler: IRQ: usbin-collapse
+01-26 20:29:39.953     0     0 I pmi632_charger: smblib_icl_change_work: icl_settled=500000
+01-26 20:29:39.992     0     0 W healthd : battery l=98 v=4320 t=29.2 h=2 st=2 c=236000 fc=4768000 cc=31 chg=a
+--------- beginning of system
+01-26 20:29:39.999   990  2144 D BatteryService: Processing new values: info={.chargerAcOnline = true, .chargerUsbOnline = false, .chargerWirelessOnline = false, .maxChargingCurrent = 500000, .maxChargingVoltage = 5000000, .batteryStatus = CHARGING, .batteryHealth = GOOD, .batteryPresent = true, .batteryLevel = 98, .batteryVoltage = 4320, .batteryTemperature = 292, .batteryCurrent = 236000, .batteryCycleCount = 31, .batteryFullCharge = 4768000, .batteryChargeCounter = 4671000, .batteryTechnology = Li-ion}, mBatteryLevelCritical=false, mPlugType=1
+01-26 20:29:39.999   990  2144 D BatteryService: shouldSetBatteryModeAlarm:mBootCompleted  true
+01-26 20:29:39.999   990  2144 D BatteryService: fileName = /sys/class/power_supply/usb/present
+01-26 20:29:40.001   990  2144 D BatteryService: readBatteryFileNode = 1
+01-26 20:29:40.001   990  2144 D BatteryService: Sending ACTION_BATTERY_CHANGED. scale:100, info:{.chargerAcOnline = true, .chargerUsbOnline = false, .chargerWirelessOnline = false, .maxChargingCurrent = 500000, .maxChargingVoltage = 5000000, .batteryStatus = CHARGING, .batteryHealth = GOOD, .batteryPresent = true, .batteryLevel = 98, .batteryVoltage = 4320, .batteryTemperature = 292, .batteryCurrent = 236000, .batteryCycleCount = 31, .batteryFullCharge = 4768000, .batteryChargeCounter = 4671000, .batteryTechnology = Li-ion}
+01-26 20:29:40.001   990  2144 D BatteryService: fileName = /sys/class/power_supply/battery/current_now
+--------- beginning of main
+01-26 20:29:40.004  2397  2397 D QtiCarrierConfigHelper: WARNING, no carrier configs on phone Id: 0
+01-26 20:29:40.006   990  2144 D BatteryService: readBatteryFileNode = 236000
+01-26 20:29:40.006   990  2144 D BatteryService: isBatteryCurrentTooHigh temp = 292 currentNow = 236 abs: 236
+01-26 20:29:40.007   990  2144 D BatteryService: updateLightsLocked level = 98,status:2,modeLedOld:0
+01-26 20:29:40.007  2097  2097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+01-26 20:29:40.010  2467  2467 D DeviceStatisticsService: chargerType=1 batteryLevel=98 totalBatteryCapacity=4766300
+01-26 20:29:40.026  2097  2097 D KeyguardUpdateMonitor: handleBatteryUpdate
+01-26 20:29:43.511     0     0 W healthd : battery l=98 v=4319 t=29.2 h=2 st=2 c=233000 fc=4768000 cc=31 chg=a
+01-26 20:29:43.548   990  2144 D BatteryService: Processing new values: info={.chargerAcOnline = true, .chargerUsbOnline = false, .chargerWirelessOnline = false, .maxChargingCurrent = 500000, .maxChargingVoltage = 5000000, .batteryStatus = CHARGING, .batteryHealth = GOOD, .batteryPresent = true, .batteryLevel = 98, .batteryVoltage = 4319, .batteryTemperature = 292, .batteryCurrent = 233000, .batteryCycleCount = 31, .batteryFullCharge = 4768000, .batteryChargeCounter = 4671000, .batteryTechnology = Li-ion}, mBatteryLevelCritical=false, mPlugType=1
+01-26 20:29:43.548   990  2144 D BatteryService: shouldSetBatteryModeAlarm:mBootCompleted  true
+01-26 20:29:43.549   990  2144 D BatteryService: fileName = /sys/class/power_supply/usb/present
+01-26 20:29:43.550   990  2144 D BatteryService: readBatteryFileNode = 1
+01-26 20:29:43.550   990  2144 D BatteryService: Sending ACTION_BATTERY_CHANGED. scale:100, info:{.chargerAcOnline = true, .chargerUsbOnline = false, .chargerWirelessOnline = false, .maxChargingCurrent = 500000, .maxChargingVoltage = 5000000, .batteryStatus = CHARGING, .batteryHealth = GOOD, .batteryPresent = true, .batteryLevel = 98, .batteryVoltage = 4319, .batteryTemperature = 292, .batteryCurrent = 233000, .batteryCycleCount = 31, .batteryFullCharge = 4768000, .batteryChargeCounter = 4671000, .batteryTechnology = Li-ion}
+01-26 20:29:43.550   990  2144 D BatteryService: fileName = /sys/class/power_supply/battery/current_now
+01-26 20:29:43.553   990  2144 D BatteryService: readBatteryFileNode = 233000
+01-26 20:29:43.553  2397  2397 D QtiCarrierConfigHelper: WARNING, no carrier configs on phone Id: 0
+01-26 20:29:43.553   990  2144 D BatteryService: isBatteryCurrentTooHigh temp = 292 currentNow = 233 abs: 233
+01-26 20:29:43.553   990  2144 D BatteryService: updateLightsLocked level = 98,status:2,modeLedOld:0
+01-26 20:29:43.557  2097  2097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+01-26 20:29:43.558  2467  2467 D DeviceStatisticsService: chargerType=1 batteryLevel=98 totalBatteryCapacity=4766300
+01-26 20:29:43.558  2467  2467 D DeviceInfoHidlClient: isPowerInfoNeverSent()=true
+01-26 20:29:43.571  2097  2097 D KeyguardUpdateMonitor: handleBatteryUpdate
+01-26 20:29:44.170   839   839 D vendor.qti.vibrator: QTI Vibrator off
+01-26 20:29:44.172   839   839 D vendor.qti.vibrator: Vibrator on for timeoutMs: 100
+01-26 20:29:44.175     0     0 F [FTS_TS]fts_input_report_key: Key0(60,2100) DOWN!
+01-26 20:29:44.209   990  1021 D AutofillManagerService: onBackKeyPressed()
+01-26 20:29:44.214     0     0 F [FTS_TS]fts_input_report_key: Key0(60,2100) Up!
+01-26 20:29:44.242   990  1993 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+01-26 20:29:44.274   839   839 D vendor.qti.vibrator: QTI Vibrator off
+01-26 20:29:44.345 12908 12932 I droid.gallery3: Waiting for a blocking GC ProfileSaver
+01-26 20:29:44.351   797   797 I sensors-hal: batch:242, android.sensor.accelerometer/11, period=200000000, max_latency=0
+01-26 20:29:44.352   797   797 I sensors-hal: set_config:63, sample_period_ns is adjusted to 200000000 based on min/max delay_ns
+01-26 20:29:44.352   797   797 I sensors-hal: batch:251, android.sensor.accelerometer/11, period=200000000, max_latency=0 request completed
+01-26 20:29:44.353   797   797 I sensors-hal: activate:209, android.sensor.accelerometer/11 en=1
+01-26 20:29:44.373   797   797 I sensors-hal: activate:220, android.sensor.accelerometer/11 en=1 completed
+01-26 20:29:44.377   797  8594 I sensors-hal: ssc_conn_resp_cb:661, resp_value = 0
+01-26 20:29:44.379 12908 12932 I droid.gallery3: WaitForGcToComplete blocked ProfileSaver on HeapTrim for 34.196ms
+01-26 20:29:44.393  2097  2131 I ndroid.systemu: NativeAlloc concurrent copying GC freed 136347(4946KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 5210KB/10MB, paused 211us total 136.461ms
+01-26 20:29:44.442 12908  7140 I GLRootView: GLObject has changed from com.google.android.gles_jni.GLImpl@15c0d3d to com.google.android.gles_jni.GLImpl@7702b66
+01-26 20:29:44.455 12908  7140 I GLRootView: onSurfaceChanged: 720x1392, gl10: com.google.android.gles_jni.GLImpl@7702b66
+01-26 20:29:44.476 12908  7140 I GLRootView: onSurfaceChanged: 720x1392, gl10: com.google.android.gles_jni.GLImpl@7702b66
+01-26 20:29:44.486 12908  8593 D LocalMergeAlbum: 1.1     changed = true
+01-26 20:29:44.536  3235  5536 W MediaProvider: Recovered abusive '0,64' from 'content://media/external/images/media?limit=0%2C64'
+01-26 20:29:44.549  3235  6512 W MediaProvider: Recovered abusive '0,64' from 'content://media/external/video/media?limit=0%2C64'
+01-26 20:29:45.134  1189  4389 W StagefrightRecorder: stop while neither recording nor paused
+01-26 20:29:45.137  8398  8398 D MainActivity: surfaceDestroyed release mRecorder
+01-26 20:29:45.138  1152  3101 E Camera2ClientBase: setPreviewCallbackFlag: attempt to use a locked camera from a different process (old pid 0, new pid 8398)
+01-26 20:29:45.644     0     0 D logd    : logdr: UID=2000 GID=2000 PID=8601 b tail=0 logMask=99 pid=0 start=0ns timeout=0ns
+01-26 20:29:45.910   839   839 D vendor.qti.vibrator: QTI Vibrator off
+01-26 20:29:45.912   839   839 D vendor.qti.vibrator: Vibrator on for timeoutMs: 100
+01-26 20:29:45.914     0     0 F [FTS_TS]fts_input_report_key: Key0(60,2100) DOWN!
+01-26 20:29:45.964     0     0 F [FTS_TS]fts_input_report_key: Key0(60,2100) Up!
+01-26 20:29:46.015   839   839 D vendor.qti.vibrator: QTI Vibrator off
+01-26 20:29:46.662     0     0 F [FTS_TS]fts_input_report_key: Key0(60,2100) DOWN!
+01-26 20:29:46.657   839   839 D vendor.qti.vibrator: QTI Vibrator off
+01-26 20:29:46.659   839   839 D vendor.qti.vibrator: Vibrator on for timeoutMs: 100
+01-26 20:29:46.703 12908 12908 V StateManager: finishState com.android.gallery3d.app.FilmstripPage@38de1a2
+01-26 20:29:46.705     0     0 F [FTS_TS]fts_input_report_key: Key0(60,2100) Up!
+01-26 20:29:46.742 12908 12908 D Gallery.MultiSetSync: onSyncDone: 本地相册 #pending=1
+01-26 20:29:46.742 12908 12908 D Gallery.MultiSetSync:   request sync: 本地相册
+01-26 20:29:46.742 12908 12908 D Gallery.MultiSetSync: onSyncDone: picasa #pending=0
+01-26 20:29:46.743 12908 12908 D Gallery.MultiSetSync:   request sync: picasa
+01-26 20:29:46.750 12908  7140 I GLRootView: layout content pane 720x1392 (compensation 0)
+01-26 20:29:46.762   839   839 D vendor.qti.vibrator: QTI Vibrator off
+01-26 20:29:46.766 12908  8607 D LocalMergeAlbum: 1.1     changed = false
+01-26 20:29:47.084   839   839 D vendor.qti.vibrator: QTI Vibrator off
+01-26 20:29:47.089     0     0 F [FTS_TS]fts_input_report_key: Key0(60,2100) DOWN!
+01-26 20:29:47.086   839   839 D vendor.qti.vibrator: Vibrator on for timeoutMs: 100
+01-26 20:29:47.153     0     0 F [FTS_TS]fts_input_report_key: Key0(60,2100) Up!
+01-26 20:29:47.171   990  6461 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+01-26 20:29:47.180 12908 12908 V StateManager: no more state, finish activity
+01-26 20:29:47.180 12908 12908 V StateManager: finishState com.android.gallery3d.app.AlbumSetPage@ad0ea8f
+01-26 20:29:47.186   797   797 I sensors-hal: activate:209, android.sensor.accelerometer/11 en=0
+01-26 20:29:47.187   797  8595 I sensors-hal: handle_indication_realtime:459, qmi indication is coming while connection is being closed
+01-26 20:29:47.188   797  8595 I sensors-hal: handle_indication_realtime:459, qmi indication is coming while connection is being closed
+01-26 20:29:47.189   839   839 D vendor.qti.vibrator: QTI Vibrator off
+01-26 20:29:47.190   797   797 I sensors-hal: activate:220, android.sensor.accelerometer/11 en=0 completed
+01-26 20:29:46.700   990  1021 I chatty  : uid=1000(system) android.ui identical 2 lines
+01-26 20:29:47.147   990  1021 D AutofillManagerService: onBackKeyPressed()
+01-26 20:29:47.883   990  2986 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-26 20:29:48.319     0     0 F [FTS_TS]fts_input_report_b: [B]P0(457, 982)[p:50,tm:2] DOWN!
+01-26 20:29:48.332 12908 12908 V StateManager: destroy
+01-26 20:29:48.374 12908 12908 E WindowManager: android.view.WindowLeaked: Activity com.android.gallery3d.app.GalleryActivity has leaked window DecorView@3fba0ab[GalleryActivity] that was originally added here
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:735)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:719)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:399)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:110)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.app.Dialog.show(Dialog.java:340)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.gallery3d.ui.DialogDetailsView.show(DialogDetailsView.java:67)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.gallery3d.ui.DetailsHelper.show(DetailsHelper.java:95)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.gallery3d.app.PhotoPage.showDetails(PhotoPage.java:1167)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.gallery3d.app.PhotoPage.onItemSelected(PhotoPage.java:1121)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.gallery3d.app.StateManager.itemSelected(StateManager.java:148)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.gallery3d.app.AbstractGalleryActivity.onOptionsItemSelected(AbstractGalleryActivity.java:280)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.app.Activity.onMenuItemSelected(Activity.java:4269)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.internal.policy.PhoneWindow.onMenuItemSelected(PhoneWindow.java:1272)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:787)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:151)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:934)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:924)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.internal.view.menu.MenuPopup.onItemClick(MenuPopup.java:128)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.widget.AdapterView.performItemClick(AdapterView.java:330)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1210)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3202)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.os.Handler.handleCallback(Handler.java:938)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.os.Looper.loop(Looper.java:223)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at android.app.ActivityThread.main(ActivityThread.java:7697)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at java.lang.reflect.Method.invoke(Native Method)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+01-26 20:29:48.374 12908 12908 E WindowManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+01-26 20:29:48.390   990  6461 W WindowManager: Failed looking up window session=Session{3729b91 12908:u0a10103} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:5445 com.android.server.wm.WindowManagerService.removeWindow:1896 com.android.server.wm.Session.remove:193 
+01-26 20:29:48.402     0     0 F [FTS_TS]fts_input_report_b: [B]P0 UP!
+01-26 20:29:48.402     0     0 F [FTS_TS]fts_input_report_b: [B]Points All Up!
+01-26 20:29:49.468     0     0 F [FTS_TS]fts_input_report_b: [B]P0(386, 735)[p:55,tm:2] DOWN!
+01-26 20:29:49.517     0     0 F [FTS_TS]fts_input_report_b: [B]P0 UP!
+01-26 20:29:49.517     0     0 F [FTS_TS]fts_input_report_b: [B]Points All Up!
+01-26 20:29:49.532   990 15376 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.meig.VideoRecoderT/.MainActivity bnds=[293,642][426,861]} from uid 10120
+01-26 20:29:49.534   757  2837 D audio_hw_primary: start_output_stream: enter: stream(0xeba84330)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+01-26 20:29:49.535   990  1023 D EventSequenceValidator: Transition from ACTIVITY_CANCELLED to INTENT_STARTED
+01-26 20:29:49.536   757  2837 D audio_hw_primary: select_devices for use case (low-latency-playback)
+01-26 20:29:49.536   757  2837 D msm8974_platform: platform_get_output_snd_device: exit: snd_device(speaker)
+01-26 20:29:49.536   757  2837 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+01-26 20:29:49.536   757  2837 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+01-26 20:29:49.537   757  2837 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+01-26 20:29:49.538   757  2837 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+01-26 20:29:49.538   757  2837 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+01-26 20:29:49.538   990  6461 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+01-26 20:29:49.538   757  2837 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+01-26 20:29:49.539   757  2837 D audio_hw_primary: check_usecases_codec_backend:becf: (84) check_usecases curr device: speaker, usecase device: backends match 0
+01-26 20:29:49.539   757  2837 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+01-26 20:29:49.539   757  2837 D hardware_info: hw_info_append_hw_type : device_name = speaker
+01-26 20:29:49.539   757  2837 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+01-26 20:29:49.539   757  2837 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+01-26 20:29:49.539   757  2837 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+01-26 20:29:49.539   757  2837 D audio_route: Apply path: speaker
+01-26 20:29:49.539   990  6461 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+01-26 20:29:49.540   990 15376 E ANDR-PERF-JNI: com_qualcomm_qtiperformance_native_perf_io_prefetch_start
+01-26 20:29:49.547   757  2837 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+01-26 20:29:49.547   757  2837 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+01-26 20:29:49.547   757  2837 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 14, sample_rate 48000, snd_device_be_idx 187
+01-26 20:29:49.547  1065  1065 I perfetto: ing_service_impl.cc:758 Configured tracing session 39, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+01-26 20:29:49.548   757  2837 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 14, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+01-26 20:29:49.548   757  2837 D ACDB-LOADER: ACDB -> send_asm_topology
+01-26 20:29:49.549   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+01-26 20:29:49.549   757  2837 D ACDB-LOADER: ACDB -> send_adm_topology
+01-26 20:29:49.549   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+01-26 20:29:49.549   757  2837 D ACDB-LOADER: ACDB -> send_audtable
+01-26 20:29:49.549   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_INSTANCE_COMMON_TABLE_SIZE
+01-26 20:29:49.549  1058  1058 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=39)
+01-26 20:29:49.549   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_INSTANCE_COMMON_TABLE
+01-26 20:29:49.549   757  2837 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[14] app_type[69937]
+01-26 20:29:49.550   757  2837 D ACDB-LOADER: ACDB -> send_audvoltable
+01-26 20:29:49.550   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_INSTANCE_GAIN_DEP_STEP_TABLE_SIZE
+01-26 20:29:49.550   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_INSTANCE_GAIN_DEP_STEP_TABLE, vol index 0
+01-26 20:29:49.550   757  2837 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+01-26 20:29:49.550   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_INSTANCE_STREAM_TABLE_SIZE
+01-26 20:29:49.550  1058  1058 E perfetto: ace_config_muxer.cc:443 ftrace in use by non-Perfetto.
+01-26 20:29:49.550   757  2837 D ACDB-LOADER: ACDB -> send_audstrmtable
+01-26 20:29:49.550   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_INSTANCE_STREAM_TABLE
+01-26 20:29:49.550  1058  1058 E perfetto: probes_producer.cc:238  Failed to setup ftrace
+01-26 20:29:49.550   757  2837 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 20
+01-26 20:29:49.550   757  2837 D ACDB-LOADER: ACDB -> send_afe_topology
+01-26 20:29:49.551   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+01-26 20:29:49.551  1058  1058 E perfetto: probes_producer.cc:176  Failed to create data source 'linux.ftrace'
+01-26 20:29:49.551   757  2837 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 14, Topology Id 112fc
+01-26 20:29:49.551   757  2837 D ACDB-LOADER: ACDB -> send_afe_cal
+01-26 20:29:49.551  1058  1058 E perfetto: probes_producer.cc:191  Data source id=39 not found
+01-26 20:29:49.551   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_INSTANCE_COMMON_TABLE_SIZE
+01-26 20:29:49.551   757  2837 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000000E 
+01-26 20:29:49.551   757  2837 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_INSTANCE_COMMON_TABLE_SIZE Returned = -19
+01-26 20:29:49.551   757  2837 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_INSTANCE_COMMON_TABLE
+01-26 20:29:49.551   757  2837 D android.hardware.audio.service: Failed to fetch the lookup information of the device 0000000E 
+01-26 20:29:49.552   757  2837 D ACDB-LOADER: Error: ACDB AFE returned = -19
+01-26 20:29:49.552   757  2837 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[14]
+01-26 20:29:49.552   757  2837 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 14 path = 0
+01-26 20:29:49.552   757  2837 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+01-26 20:29:49.552   990 15376 D CompatibilityInfo: mCompatibilityFlags - 0
+01-26 20:29:49.552   990 15376 D CompatibilityInfo: applicationDensity - 320
+01-26 20:29:49.552   757  2837 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+01-26 20:29:49.552   990 15376 D CompatibilityInfo: applicationScale - 1.0
+01-26 20:29:49.552   757  2837 D audio_route: Apply path: low-latency-playback
+01-26 20:29:49.554   990 15376 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+01-26 20:29:49.562   814   827 E ANDR-IOP: io prefetch is disabled
+01-26 20:29:49.564   990  1023 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+01-26 20:29:49.569   990  6461 I ActivityTaskManager: The Process com.meig.VideoRecoderT Already Exists in BG. So sending its PID: 8398
+01-26 20:29:49.570   990  6461 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (11287676)
+01-26 20:29:49.572   990  6461 D CompatibilityInfo: mCompatibilityFlags - 0
+01-26 20:29:49.572   990  6461 D CompatibilityInfo: applicationDensity - 320
+01-26 20:29:49.572   990  6461 D CompatibilityInfo: applicationScale - 1.0
+01-26 20:29:49.579   990  1023 D OomAdjuster: App adj change from cached state to fg state : 8398 com.meig.VideoRecoderT
+01-26 20:29:49.594     0     0 E zbs bengal_enable_spk_ext_pa: enable external speaker PA
+01-26 20:29:49.597     0     0 E enable_spk_ext_pa: @@@@@@ AW87XX_MODE2 @@@@@@
+01-26 20:29:49.597     0     0 I __afe_port_start: port id: 0xb030
+01-26 20:29:49.597     0     0 I afe_find_cal_topo_id_by_port: port id: 0xb030, dev_acdb_id: 14
+01-26 20:29:49.597     0     0 I afe_find_cal_topo_id_by_port: top_id:112fc acdb_id:14 afe_port_id:0xb030
+01-26 20:29:49.597     0     0 I afe_get_cal_topology_id: port_id = 0xb030 acdb_id = 14 topology_id = 0x112fc cal_type_index=8 ret=0
+01-26 20:29:49.597     0     0 I afe_send_port_topology_id: AFE set topology id 0x112fc  enable for port 0xb030 ret 0
+01-26 20:29:49.597     0     0 I send_afe_cal_type: cal_index is 0
+01-26 20:29:49.597     0     0 I send_afe_cal_type: dev_acdb_id[170] is 14
+01-26 20:29:49.597     0     0 I afe_find_cal: cal_index 0 port_id 0xb030 port_index 170
+01-26 20:29:49.597     0     0 I afe_find_cal: acdb_id 14 dev_acdb_id 14 sample_rate 48000 afe_sample_rates 48000
+01-26 20:29:49.597     0     0 I afe_find_cal: cal block is a match, size is 0
+01-26 20:29:49.597     0     0 I send_afe_cal_type: Sending cal_index cal 0
+01-26 20:29:49.597     0     0 E send_afe_cal_type: No cal sent for cal_index 0, port_id = 0xb030! ret -22
+01-26 20:29:49.598     0     0 I afe_send_hw_delay: port_id 0xb030 rate 48000 delay_usec 474 status 0
+01-26 20:29:49.616   757  2837 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map9
+01-26 20:29:49.616   757  2837 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+01-26 20:29:49.618   757  2837 D audio_hw_primary: start_output_stream: exit
+01-26 20:29:49.776   990  2429 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+01-26 20:29:49.804   990  1035 D ArtManagerInternalImpl: /data/misc/iorapd/com.meig.VideoRecoderT/1/com.meig.VideoRecoderT.MainActivity/compiled_traces/compiled_trace.pb exists
+01-26 20:29:49.804   990  1035 D ArtManagerInternalImpl: /data/misc/iorapd/com.meig.VideoRecoderT/1/com.meig.VideoRecoderT.MainActivity/compiled_traces/compiled_trace.pb size is 0
+01-26 20:29:49.805   757   757 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=true
+01-26 20:29:49.808   990  1035 I ActivityTaskManager: Displayed com.meig.VideoRecoderT/.MainActivity: +270ms
+01-26 20:29:49.810   990  1023 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+01-26 20:29:50.091   898   898 E Layer   : [Surface(name=Task=10604)/@0x1563cea - animation-leash#0] No local sync point found
+01-26 20:29:50.091   898   898 E Layer   : [Surface(name=Task=10604)/@0x1563cea - animation-leash#0] No local sync point found
+01-26 20:29:50.092   898   898 E Layer   : [Surface(name=Task=1)/@0x21d51e3 - animation-leash#0] No local sync point found
+01-26 20:29:50.092   898   898 E Layer   : [Surface(name=Task=1)/@0x21d51e3 - animation-leash#0] No local sync point found
+01-26 20:29:50.806   757   757 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=false
+01-26 20:29:50.806   757  2837 W audio_hw_primary: out_write: underrun(259) frames_by_time(48237) > out->last_fifo_frames_remaining(384)
+01-26 20:29:50.845   757   757 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=true
+01-26 20:29:51.646     0     0 W healthd : battery l=98 v=4308 t=29.2 h=2 st=2 c=156000 fc=4768000 cc=31 chg=a
+01-26 20:29:51.674   990  2144 D BatteryService: Processing new values: info={.chargerAcOnline = true, .chargerUsbOnline = false, .chargerWirelessOnline = false, .maxChargingCurrent = 500000, .maxChargingVoltage = 5000000, .batteryStatus = CHARGING, .batteryHealth = GOOD, .batteryPresent = true, .batteryLevel = 98, .batteryVoltage = 4308, .batteryTemperature = 292, .batteryCurrent = 156000, .batteryCycleCount = 31, .batteryFullCharge = 4768000, .batteryChargeCounter = 4671000, .batteryTechnology = Li-ion}, mBatteryLevelCritical=false, mPlugType=1
+01-26 20:29:51.674   990  2144 D BatteryService: shouldSetBatteryModeAlarm:mBootCompleted  true
+01-26 20:29:51.674   990  2144 D BatteryService: fileName = /sys/class/power_supply/usb/present
+01-26 20:29:51.676   990  2144 D BatteryService: readBatteryFileNode = 1
+01-26 20:29:51.676   990  2144 D BatteryService: Sending ACTION_BATTERY_CHANGED. scale:100, info:{.chargerAcOnline = true, .chargerUsbOnline = false, .chargerWirelessOnline = false, .maxChargingCurrent = 500000, .maxChargingVoltage = 5000000, .batteryStatus = CHARGING, .batteryHealth = GOOD, .batteryPresent = true, .batteryLevel = 98, .batteryVoltage = 4308, .batteryTemperature = 292, .batteryCurrent = 156000, .batteryCycleCount = 31, .batteryFullCharge = 4768000, .batteryChargeCounter = 4671000, .batteryTechnology = Li-ion}
+01-26 20:29:51.677   990  2144 D BatteryService: fileName = /sys/class/power_supply/battery/current_now
+01-26 20:29:51.679   990  2144 D BatteryService: readBatteryFileNode = 156000
+01-26 20:29:51.679   990  2144 D BatteryService: isBatteryCurrentTooHigh temp = 292 currentNow = 156 abs: 156
+01-26 20:29:51.679   990  2144 D BatteryService: updateLightsLocked level = 98,status:2,modeLedOld:0
+01-26 20:29:51.679  2397  2397 D QtiCarrierConfigHelper: WARNING, no carrier configs on phone Id: 0
+01-26 20:29:51.684  2467  2467 D DeviceStatisticsService: chargerType=1 batteryLevel=98 totalBatteryCapacity=4766300
+01-26 20:29:51.685  2467  2467 D DeviceInfoHidlClient: isPowerInfoNeverSent()=true
+01-26 20:29:51.686  2097  2097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+01-26 20:29:51.692  2097  2097 D KeyguardUpdateMonitor: handleBatteryUpdate
+01-26 20:29:51.791     0     0 F [FTS_TS]fts_input_report_b: [B]P0(332, 1435)[p:41,tm:1] DOWN!
+01-26 20:29:51.789   817   835 W ANDR-PERF-LM: FeatureState: readState() 149: warning: appName is NULL, returning default State
+01-26 20:29:51.790   817   835 W ANDR-PERF-LM: FeatureState: readState() 149: warning: appName is NULL, returning default State
+01-26 20:29:51.847   757   757 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=false
+01-26 20:29:51.848   757  2837 W audio_hw_primary: out_write: underrun(260) frames_by_time(48197) > out->last_fifo_frames_remaining(384)
+01-26 20:29:51.883     0     0 F [FTS_TS]fts_input_report_b: [B]P0 UP!
+01-26 20:29:51.883     0     0 F [FTS_TS]fts_input_report_b: [B]Points All Up!
+01-26 20:29:51.886  1189  4389 W StagefrightRecorder: stop while neither recording nor paused
+01-26 20:29:51.887   757   757 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=true
+01-26 20:29:51.888  8398  8398 E libc    : Access denied finding property "vendor.camera.aux.packagelist"
+01-26 20:29:51.889  1152  3101 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10147 pid=8398
+01-26 20:29:51.884  8398  8398 W g.VideoRecoderT: type=1400 audit(0.0:169): avc: denied { read } for name="u:object_r:vendor_persist_camera_prop:s0" dev="tmpfs" ino=20162 scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:vendor_persist_camera_prop:s0 tclass=file permissive=0 app=com.meig.VideoRecoderT
+01-26 20:29:51.890   757   757 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=false
+01-26 20:29:51.891  8398  8398 E libc    : Access denied finding property "vendor.camera.hal1.packagelist"
+01-26 20:29:51.891  1152  3101 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10147 pid=8398
+01-26 20:29:51.892  1152  3101 I CameraService: CameraService::connect call (PID -1 "com.meig.VideoRecoderT", camera ID 0) for HAL version default and Camera API version 1
+01-26 20:29:51.892   757  2837 W audio_hw_primary: out_write: underrun(261) frames_by_time(416) > out->last_fifo_frames_remaining(384)
+01-26 20:29:51.892   990  6461 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+01-26 20:29:51.893  1152  3101 E CameraService: CameraService::connect evicting conflicting client for camera ID 0
+01-26 20:29:51.893  1152  3101 E Camera2Client: notifyError: Error condition 0 reported by HAL, requestId -1
+01-26 20:29:51.901  1152  3101 I Camera3-Device: disconnectImpl: E
+01-26 20:29:51.903   817   817 E ANDR-PERF-TARGET: Error: Invalid logical cluster id 2
+01-26 20:29:51.903   817   817 E ANDR-PERF-REQUEST: Translate to physical failed
+01-26 20:29:51.903   817   817 E ANDR-PERF-TARGET: Error: Invalid logical cluster id 2
+01-26 20:29:51.903   817   817 E ANDR-PERF-REQUEST: Translate to physical failed
+01-26 20:29:51.905   510   510 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.0::IDisplayConfig/default in either framework or device manifest.
+01-26 20:29:51.906   770   770 E CamX    : [ERROR][FORMAT ] camxdisplayconfig.cpp:124 Initialize() IDisplayConfig service is NULL, version 1.0
+01-26 20:29:51.907  1152  3101 I CameraProviderManager: Camera device device@3.5/legacy/0 torch status is now AVAILABLE_OFF
+01-26 20:29:51.907  1152  3101 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=0, newStatus=1
+01-26 20:29:51.908  1152  3101 I CameraProviderManager: Camera device device@3.5/legacy/1 torch status is now AVAILABLE_OFF
+01-26 20:29:51.908  1152  3101 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=1, newStatus=1
+01-26 20:29:51.908  1152  3101 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 1: No such file or directory (-2)
+01-26 20:29:51.916  1152  3101 I Camera3-Device: disconnectImpl: X
+01-26 20:29:51.919  1152  3101 I CameraService: disconnect: Disconnected client for camera 0 for PID 0
+01-26 20:29:51.920  1152  3101 I Camera2Client: Camera 0: Closed
+01-26 20:29:51.920  1152  3101 I Camera2ClientBase: Closed Camera 0. Client was: com.meig.VideoRecoderT (PID 8398, UID 10147)
+01-26 20:29:51.920  1152  3101 I Camera2ClientBase: Camera 0: Opened. Client: com.meig.VideoRecoderT (PID 8398, UID 10147)
+01-26 20:29:51.921  1152  5092 I Camera3-Device: disconnectImpl: E
+01-26 20:29:51.923  1152  3101 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=0, newStatus=0
+01-26 20:29:51.924  1152  3101 I CameraProviderManager: Camera device device@3.5/legacy/0 torch status is now NOT_AVAILABLE
+01-26 20:29:51.924   757   757 D audio_hw_primary: adev_set_parameters: enter: cameraFacing=back
+01-26 20:29:51.924  1152  3101 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=0, newStatus=0
+01-26 20:29:51.925  1152  3101 I CameraProviderManager: Camera device device@3.5/legacy/1 torch status is now NOT_AVAILABLE
+01-26 20:29:51.925  2097  2311 D FlashlightTile: isHaveCamera = -1
+01-26 20:29:51.925  1152  3101 I CameraService: onTorchStatusChangedLocked: Torch status changed for cameraId=1, newStatus=0
+01-26 20:29:51.925  1152  3101 E CameraService: onTorchStatusChangedLocked: cannot get torch status of camera 1: No such file or directory (-2)
+01-26 20:29:51.926   817   817 E ANDR-PERF-TARGET: Error: Invalid logical cluster id 2
+01-26 20:29:51.926   817   817 E ANDR-PERF-REQUEST: Translate to physical failed
+01-26 20:29:51.926   817   817 E ANDR-PERF-TARGET: Error: Invalid logical cluster id 2
+01-26 20:29:51.927   817   817 E ANDR-PERF-REQUEST: Translate to physical failed
+01-26 20:29:51.928   510   510 I hwservicemanager: getTransport: Cannot find entry vendor.display.config@1.0::IDisplayConfig/default in either framework or device manifest.
+01-26 20:29:51.929   770  1281 E CamX    : [ERROR][FORMAT ] camxdisplayconfig.cpp:124 Initialize() IDisplayConfig service is NULL, version 1.0
+01-26 20:29:51.934   770   770 W HwBinder:770_2: type=1400 audit(0.0:170): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=19988 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+01-26 20:29:51.942   770  1281 E libc    : Access denied finding property "ro.camera.req.fmq.size"
+01-26 20:29:51.943   770  1281 E FMQ     : grantorIdx must be less than 3
+01-26 20:29:51.934   770   770 W HwBinder:770_2: type=1400 audit(0.0:171): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=19988 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+01-26 20:29:51.944   770  1281 E libc    : Access denied finding property "ro.camera.res.fmq.size"
+01-26 20:29:51.944   770  1281 E FMQ     : grantorIdx must be less than 3
+01-26 20:29:51.947  1152  3101 E FMQ     : grantorIdx must be less than 3
+01-26 20:29:51.954     0     0 I pmi632_charger: default_irq_handler: IRQ: usbin-collapse
+01-26 20:29:51.948  1152  3101 E FMQ     : grantorIdx must be less than 3
+01-26 20:29:51.951  1152  3101 W Camera2-Parameters: initialize: Camera 0: Unknown preview format: 24
+01-26 20:29:51.951  1152  3101 W Camera2-Parameters: initialize: Camera 0: Unknown preview format: 25
+01-26 20:29:51.952  1152  3101 E Camera2-Parameters: Error finding static metadata entry 'android.distortionCorrection.availableModes' (1b0001)
+01-26 20:29:51.952  1152  3101 I Camera2-Parameters: Camera 0: Disabling ZSL mode
+01-26 20:29:51.952  1152  3101 I Camera2-Parameters: initialize: allowZslMode: 0 slowJpegMode 1
+01-26 20:29:51.956  1152  1918 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10147 pid=8398
+01-26 20:29:51.957  1152  1918 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10147 pid=8398
+01-26 20:29:51.981   817  3075 E ANDR-PERF-LM: DependentServices: getServices() 97: Service Tracker HAL could not find Client Connections
+01-26 20:29:51.983  8398  8398 D MainActivity: date:202212682951
+01-26 20:29:52.007  8398  8398 I MediaRecorderJNI: prepare: surface=0xb4000074e5f67220
+01-26 20:29:52.009  1189 12458 D MPEG4Writer: PreAllocation disabled. fallocate : Operation not supported on transport endpoint, 95
+01-26 20:29:52.010  1189 12458 E CameraSource: Requested frame rate (25) is not supported: 15,24,30
+01-26 20:29:52.011  1189 12458 I ExtendedCameraSource: Careating : ExtendedCameraSource
+01-26 20:29:52.011  1152  1918 E Camera2ClientBase: getParameters: attempt to use a locked camera from a different process (old pid 0, new pid 1189)
+01-26 20:29:52.011  1152  3101 E Camera2ClientBase: setParameters: attempt to use a locked camera from a different process (old pid 0, new pid 1189)
+01-26 20:29:52.012  1189 12458 E ExtendedUtils: Failed to set parameter - cache-video-buffers
+01-26 20:29:52.012  1189 12458 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+01-26 20:29:52.012  1189 12458 D MPEG4Writer: reset()
+01-26 20:29:52.012  1189 12458 D MPEG4Writer: release()
+01-26 20:29:52.019  8398  8398 E MediaRecorder: start failed: -19
+01-26 20:29:52.020  8398  8398 W System.err: java.lang.RuntimeException: start failed.
+01-26 20:29:52.020  8398  8398 W System.err: 	at android.media.MediaRecorder.start(Native Method)
+01-26 20:29:52.021  8398  8398 W System.err: 	at com.meig.VideoRecoderT.MainActivity$2.onClick(MainActivity.java:150)
+01-26 20:29:52.021  8398  8398 W System.err: 	at android.view.View.performClick(View.java:7448)
+01-26 20:29:52.021  8398  8398 W System.err: 	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1119)
+01-26 20:29:52.021  8398  8398 W System.err: 	at android.view.View.performClickInternal(View.java:7425)
+01-26 20:29:52.021  8398  8398 W System.err: 	at android.view.View.access$3600(View.java:810)
+01-26 20:29:52.022  8398  8398 W System.err: 	at android.view.View$PerformClick.run(View.java:28309)
+01-26 20:29:52.022  8398  8398 W System.err: 	at android.os.Handler.handleCallback(Handler.java:938)
+01-26 20:29:52.022  8398  8398 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-26 20:29:52.022  8398  8398 W System.err: 	at android.os.Looper.loop(Looper.java:223)
+01-26 20:29:52.022  8398  8398 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:7697)
+01-26 20:29:52.022  8398  8398 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+01-26 20:29:52.023  8398  8398 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+01-26 20:29:52.023  8398  8398 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+01-26 20:29:52.061   990  6620 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+01-26 20:29:52.088   757   781 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=true
+01-26 20:29:52.470   990  2986 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-26 20:29:51.960     0     0 I pmi632_charger: default_irq_handler: IRQ: usbin-collapse
+01-26 20:29:52.993     0     0 I pmi632_charger: smblib_icl_change_work: icl_settled=550000
+01-26 20:29:53.041     0     0 W healthd : battery l=98 v=4305 t=29.2 h=2 st=2 c=150000 fc=4768000 cc=31 chg=a
+01-26 20:29:53.045   990  1970 D BatteryService: Processing new values: info={.chargerAcOnline = true, .chargerUsbOnline = false, .chargerWirelessOnline = false, .maxChargingCurrent = 550000, .maxChargingVoltage = 5000000, .batteryStatus = CHARGING, .batteryHealth = GOOD, .batteryPresent = true, .batteryLevel = 98, .batteryVoltage = 4305, .batteryTemperature = 292, .batteryCurrent = 150000, .batteryCycleCount = 31, .batteryFullCharge = 4768000, .batteryChargeCounter = 4671000, .batteryTechnology = Li-ion}, mBatteryLevelCritical=false, mPlugType=1
+01-26 20:29:53.045   990  1970 D BatteryService: shouldSetBatteryModeAlarm:mBootCompleted  true
+01-26 20:29:53.045   990  1970 D BatteryService: fileName = /sys/class/power_supply/usb/present
+01-26 20:29:53.046   990  1970 D BatteryService: readBatteryFileNode = 1
+01-26 20:29:53.047   990  1970 D BatteryService: Sending ACTION_BATTERY_CHANGED. scale:100, info:{.chargerAcOnline = true, .chargerUsbOnline = false, .chargerWirelessOnline = false, .maxChargingCurrent = 550000, .maxChargingVoltage = 5000000, .batteryStatus = CHARGING, .batteryHealth = GOOD, .batteryPresent = true, .batteryLevel = 98, .batteryVoltage = 4305, .batteryTemperature = 292, .batteryCurrent = 150000, .batteryCycleCount = 31, .batteryFullCharge = 4768000, .batteryChargeCounter = 4671000, .batteryTechnology = Li-ion}
+01-26 20:29:53.047   990  1970 D BatteryService: fileName = /sys/class/power_supply/battery/current_now
+01-26 20:29:53.049  2397  2397 D QtiCarrierConfigHelper: WARNING, no carrier configs on phone Id: 0
+01-26 20:29:53.053  2097  2097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+01-26 20:29:53.054   990  1970 D BatteryService: readBatteryFileNode = 150000
+01-26 20:29:53.055   990  1970 D BatteryService: isBatteryCurrentTooHigh temp = 292 currentNow = 150 abs: 150
+01-26 20:29:53.055   990  1970 D BatteryService: updateLightsLocked level = 98,status:2,modeLedOld:0
+01-26 20:29:53.056  2467  2467 D DeviceStatisticsService: chargerType=1 batteryLevel=98 totalBatteryCapacity=4766300
+01-26 20:29:53.056  2467  2467 D DeviceInfoHidlClient: isPowerInfoNeverSent()=true
+01-26 20:29:53.070  2097  2097 D KeyguardUpdateMonitor: handleBatteryUpdate
+01-26 20:29:53.089   757   781 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=false
+01-26 20:29:53.090   757  2837 W audio_hw_primary: out_write: underrun(262) frames_by_time(48231) > out->last_fifo_frames_remaining(384)
+01-26 20:29:53.129   757   781 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=true
+01-26 20:29:54.130   757   781 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=false
+01-26 20:29:54.131   757  2837 W audio_hw_primary: out_write: underrun(263) frames_by_time(48346) > out->last_fifo_frames_remaining(384)
+01-26 20:29:54.170   757   781 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=true
+01-26 20:29:54.555  1058  1058 I perfetto: probes_producer.cc:329  Producer stop (id=39)
+01-26 20:29:54.556  1058  1058 E perfetto: probes_producer.cc:333  Cannot stop data source id=39, not found
+01-26 20:29:55.172   757   781 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: suspend_playback=false
+01-26 20:29:55.173   757   757 D audio_hw_primary: out_standby: enter: stream (0xeba84330) usecase(1: low-latency-playback)
+01-26 20:29:55.206     0     0 E zbs bengal_enable_spk_ext_pa: disalbe external speaker PA
+01-26 20:29:55.207     0     0 E enable_spk_ext_pa: @@@@@@ AW87XX_SHUTDOWN @@@@@@
+01-26 20:29:55.223   757   757 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+01-26 20:29:55.224   757   757 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+01-26 20:29:55.224   757   757 D hardware_info: hw_info_append_hw_type : device_name = speaker
+01-26 20:29:55.225   757   757 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+01-26 20:29:55.226     0     0 I afe_close: port_id = 0xb030
+01-26 20:29:55.233   757   757 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+01-26 20:29:55.236   990  6620 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
