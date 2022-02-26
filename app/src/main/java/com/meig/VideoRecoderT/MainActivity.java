@@ -238,8 +238,11 @@ public class MainActivity extends AppCompatActivity {
                         //CameraSource: Requested frame rate (25) is not supported: 15,24,30
                         mRecorder.setVideoFrameRate(frameRate);
                         mRecorder.setVideoEncodingBitRate(bitRate);
-
-                        mRecorder.setOrientationHint(90);
+                        if (mDeiveceWith > mDeiveceHeight) {
+                            mRecorder.setOrientationHint(0);
+                        } else {
+                            mRecorder.setOrientationHint(90);
+                        }
                         //设置记录会话的最大持续时间（毫秒）
                         mRecorder.setMaxDuration(10*60*1000);
 
@@ -291,7 +294,8 @@ public class MainActivity extends AppCompatActivity {
                         if (mMediaScanner !=null && mMediaScanner.isConnected()) {
                             mMediaScanner.scanFile(path, ".mp4");
                         }
-
+                        text = 0;
+                        textView.setText("" + text);
                         mPathView.setText(path);
                     }
                     mStartedFlg = false;
